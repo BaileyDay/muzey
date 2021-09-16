@@ -4,6 +4,7 @@ WORKDIR /
 ENV PATH ./node_modules/.bin:$PATH
 COPY package.json ./
 COPY yarn.lock ./
+RUN npm i 
 RUN npm i react-scripts@3.4.1 -g --silent
 COPY . ./
 RUN npm run build
