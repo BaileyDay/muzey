@@ -1,6 +1,7 @@
 import './App.css';
 import MailchimpSubscribe from "react-mailchimp-subscribe"
-import Particles from 'react-particles-js';
+import Particles from 'react-particles-js'; 
+import Header from './header'
 
 const url = "https://gmail.us5.list-manage.com/subscribe/post?u=bffd088a27d203252b3da569e&amp;id=0b7582dbd9"
 const CustomForm = ({ status, message, onValidated }) => {
@@ -130,6 +131,8 @@ className="particles"
         
 
     </div>
+    <Header/>
+    
  </>
   );
 }
